@@ -1,0 +1,294 @@
+@charset "ISO-8859-1";
+/* Nav bar styling */
+#webLogo {
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: -10px;
+	border-radius: 10px;
+}
+
+#kebabteknikerlogo {
+	margin-left: -286px;
+	border-radius: 1000px;
+	height: 60%;
+}
+
+#kebabteknikerlogoHome {
+	margin: auto;
+	border-radius: 1000px;
+}
+
+.topNav {
+	position: fixed;
+	top: 0;
+	margin-left: 15%;
+	margin-right: 15%;
+	border-radius: 10px;
+}
+
+nav {
+	box-shadow: 2px 2px 3px #888;
+	position: sticky;
+	top: 0px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #3B82F6;
+	color: #F3F4F6;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 20px;
+	position: relative;
+	border-right: 1px solid #F3F4F6;
+	padding: 20px 30px;
+}
+
+nav ul li:hover ul {
+	display: block;
+}
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #3B82F6;
+}
+
+nav ul ul li {
+	display: block;
+	padding: 10px;
+}
+
+nav ul ul li:hover {
+	background-color: #60A5FA;
+}
+
+nav ul ul ul {
+	left: 100%;
+	top: 0;
+}
+
+nav ul li:hover>a {
+	color: #F9FAFB;
+}
+
+nav ul li a {
+	display: block;
+	text-decoration: none;
+	color: inherit;
+}
+
+nav ul li:hover>ul {
+	display: block;
+}
+
+/* body styling */
+body {
+	background-color: #F3F4F6;
+}
+
+.contentBody {
+	display: flex;
+	border-radius: 7px;
+	margin: 15%;
+	margin-top: 15%;
+	margin-top: 5%;
+	border-width: 1px;
+	border-color: #D1D5DB;
+	padding: 30px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0
+		rgba(0, 0, 0, 0.19);
+	background-color: white;
+}
+
+#contentBodyHome{
+	flex-direction:column;
+}
+
+.contentInput {
+	flex: 1.1;
+}
+
+.contentTable {
+	flex: 0.7;
+	display: flex;
+}
+
+.inputField {
+	padding: 30px;
+}
+
+input {
+	margin-bottom: 15px;
+	margin-right: 15px;
+	margin-left: 5px;
+}
+
+/* table styling */
+caption {
+	margin: 10px;
+}
+
+.styled-table {
+	border-collapse: collapse;
+	margin: auto;
+	margin-top: 52px;
+	font-size: 0.9em;
+	font-family: sans-serif;
+	min-width: 400px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	margin-left: 20px;
+}
+
+.styled-table thead tr {
+	background-color: #3B82F6;
+	color: #ffffff;
+	text-align: left;
+}
+
+.styled-table th, .styled-table td {
+	padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+	border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+	background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+	border-bottom: 2px solid #3B82F6;
+}
+/* miscellaneous */
+#goToTop {
+/*	display: none;*/
+	position: fixed;
+	bottom: 50px;
+	right: 60px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	width: 100%; /* Full width */
+	padding: 12px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box;
+	/* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical
+		/* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=email] {
+	width: 100%; /* Full width */
+	padding: 10px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box;
+	/* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	background-color: #3B82F6;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=number] {
+	padding: 12px; /* Some padding */
+	border: 1px solid #ccc; /* Gray border */
+	border-radius: 4px; /* Rounded borders */
+	box-sizing: border-box;
+	/* Make sure that padding and width stays in place */
+	margin-top: 6px; /* Add a top margin */
+	margin-bottom: 16px; /* Bottom margin */
+	resize: vertical
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+	background-color: #60A5FA;
+}
+
+/* Add a background color and some padding around the form */
+.formContainer {
+	margin-top: 50px;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+}
+
+/* footer*/
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 69.5%;
+	background-color: #3B82F6;
+	color: #F3F4F6;
+	text-align: center;
+	margin-left: 290px;
+}
+
+footer h3 {
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+footer p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer li {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	margin-top: -20px;
+	padding: 2px;
+}
+
+.footerContainer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col-md-6 {
+	flex-basis: calc(50% - 20px);
+	margin-right: 20px;
+}
